@@ -64,3 +64,11 @@ FROM student
 GROUP BY city
 ORDER BY avg_marks ASC;
 
+SELECT grade, count(name)
+FROM student
+GROUP BY grade;
+
+SELECT count(name),city 
+FROM student 
+GROUP BY city
+HAVING max(marks)>90;
